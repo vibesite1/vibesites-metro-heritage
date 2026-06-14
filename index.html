@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개조저항 115편성, 서울의 심장을 달리다</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+
+        :root {
+            --cream-color: #F8F7F0; /* 전동차 크림색 */
+            --red-stripe: #D32F2F; /* 전동차 빨간 줄 */
+            --dark-text: #333;
+            --light-text: #F0F0F0;
+            --accent-red: #E53935; /* 강조용 빨간색 */
+        }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--cream-color);
+            color: var(--dark-text);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: var(--red-stripe);
+            color: var(--light-text);
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 2;
+        }
+
+        h2 {
+            font-size: 2.2em;
+            color: var(--red-stripe);
+            text-align: center;
+            margin: 60px 0 30px;
+            position: relative;
+            font-weight: 700;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--red-stripe);
+            margin: 15px auto 0;
+            border-radius: 2px;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #FFF;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            margin-bottom: 30px;
+        }
+
+        section p {
+            font-size: 1.1em;
+            margin-bottom: 1em;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .highlight {
+            color: var(--accent-red);
+            font-weight: 700;
+        }
+
+        .cta-section {
+            background-color: var(--red-stripe);
+            color: var(--light-text);
+            padding: 60px 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta-section p {
+            font-size: 1.4em;
+            margin-bottom: 30px;
+            font-weight: 300;
+            color: var(--light-text);
+        }
+
+        .cta-button {
+            background-color: var(--cream-color);
+            color: var(--red-stripe);
+            border: none;
+            padding: 18px 35px;
+            font-size: 1.3em;
+            font-weight: 700;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            background-color: #E0E0E0;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #777;
+            font-size: 0.9em;
+            margin-top: 40px;
+            border-top: 1px solid #EEE;
+            background-color: #FDFDFD;
+        }
+
+        /* 모바일 대응 */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+            h2 {
+                font-size: 1.8em;
+            }
+            section {
+                padding: 30px 15px;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+            section p {
+                font-size: 1em;
+            }
+            .cta-section p {
+                font-size: 1.2em;
+            }
+            .cta-button {
+                padding: 15px 25px;
+                font-size: 1.1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            .cta-section {
+                padding: 40px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>개조저항 115편성, 서울의 심장을 달리다</h1>
+        <p>변치 않는 위용, 서울의 기억을 품은 전설적인 전동차</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>역사와 전통의 숨결</h2>
+            <p>서울교통공사 소속 <span class="highlight">개조저항 115편성</span>은 단순한 전동차를 넘어, 서울의 성장과 발전을 함께한 살아있는 역사입니다. 그 특유의 <span class="highlight">빨간 줄과 크림색 도색</span>은 도시 풍경 속에서 한눈에 들어오는 독보적인 존재감을 자랑하며, 수많은 시민들의 출퇴근길과 일상에 깊숙이 자리 잡아왔습니다.</p>
+            <p>6량으로 구성된 이 전동차는 견고한 저항제어 방식의 심장을 가지고, 수십 년간 묵묵히 서울 지하철 노선을 누비며 시민들의 발이 되어주었습니다. 때로는 시끄럽다고 여겨졌던 <span class="highlight">모터 소리마저 이제는 정겹고 아련한 추억의 소리</span>로 기억될 만큼, 115편성은 우리 모두의 삶 속에 깊이 스며들어 있습니다.</p>
+        </section>
+
+        <section>
+            <h2>변함없는 위용과 긍지</h2>
+            <p>기술의 발전 속에서도 개조저항 115편성은 그 <span class="highlight">자신만의 독특한 매력</span>을 잃지 않았습니다. 고유의 저항제어 방식에서 뿜어져 나오는 웅장한 가속음은 마치 살아있는 기계 생명체가 숨 쉬는 듯한 강렬한 인상을 주며, 이는 다른 신형 전동차에서는 결코 느낄 수 없는 <span class="highlight">115편성만의 특권이자 상징</span>입니다.</p>
+            <p>내구성과 실용성을 겸비한 115편성은 수많은 개조와 보수를 거치며, 더욱 굳건히 제 역할을 수행했습니다. 그 늠름한 모습은 여전히 서울 지하철 노선 어딘가에서 시민들을 태우고 달리며, <span class="highlight">건재함과 불굴의 정신</span>을 보여주고 있습니다. 우리는 이 전동차에 담긴 시간의 흔적과 고유한 멋을 영원히 기억할 것입니다.</p>
+        </section>
+
+        <section>
+            <h2>시민들의 사랑을 받다</h2>
+            <p>115편성은 단순한 교통수단을 넘어, 많은 철도 동호인들과 시민들에게 <span class="highlight">깊은 애정과 존경</span>을 받아왔습니다. 그 희소성과 역사적 가치, 그리고 친숙한 외관은 많은 이들에게 특별한 의미를 부여합니다. 특히, 어린 시절 이 전동차를 타고 등하교하던 추억을 가진 이들에게는 <span class="highlight">향수를 자극하는 존재</span>이기도 합니다.</p>
+            <p>빨간 줄과 크림색의 조화는 서울의 역동성과 전통을 동시에 담아내는 듯합니다. 이 색상은 단순한 도색을 넘어, 115편성이 지나온 시간과 미래를 향한 염원을 상징합니다. 개조저항 115편성이 서울의 거리에서 계속해서 빛나는 별처럼 존재하길 바랍니다.</p>
+        </section>
+    </main>
+
+    <div class="cta-section">
+        <p>서울의 지하를 달리는 살아있는 전설, <br>개조저항 115편성의 위대한 역사를 함께 하세요.</p>
+        <button class="cta-button" onclick="redirectToHistory()">『개조저항, 그를 다시 영접하라. 』</button>
+    </div>
+
+    <footer>
+        <p>© 2023 VibeSites AI - 개조저항 115편성 찬가. 모든 권리 보유.</p>
+    </footer>
+
+    <script>
+        function redirectToHistory() {
+            window.location.href = "https://www.ehistory.go.kr/view/movie?mediasrcgbn=KV&mediaid=906&mediadtl=6753&mediagbn=DH";
+        }
+    </script>
+</body>
+</html>
+```
+
+<script>
+
+(async()=>{
+
+try{
+
+await fetch(
+"https://vibesite-oxc9.onrender.com/ping",
+{
+
+method:"POST",
+
+headers:{
+"Content-Type":"application/json"
+},
+
+body:JSON.stringify({
+
+site:
+location.pathname
+.replace("/","")
+
+})
+
+}
+
+);
+
+}catch{}
+
+})();
+
+</script>
+
